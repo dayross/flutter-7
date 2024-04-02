@@ -1,12 +1,8 @@
-# flutter_application_1
+# Flutter 7
 
-A new Flutter project.
+En este repositorio voy a ubicar todos mis avances en la practica 7
+del curso de flutter que actualmente estoy tomando.
 
-## Getting Started
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+La tematica de la practica es hacer una aplicación la cual tenga una visualización
+e interacción del usuario con videos deslizables.
