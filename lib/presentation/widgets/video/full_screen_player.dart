@@ -18,7 +18,6 @@ class _FullScreenPlayerState extends State<FullScreenPlayer> {
 
   @override
   void initState() {
-    // TODO: implement initState
     super.initState(); // es lo primero que se tiene que hacer
     _controller = VideoPlayerController.asset(widget.videoUrl)
       ..setVolume(0.1)
@@ -72,7 +71,7 @@ class _FullScreenPlayerState extends State<FullScreenPlayer> {
 
 class _VideoCaption extends StatelessWidget {
   final String caption;
-  const _VideoCaption({super.key, required this.caption});
+  const _VideoCaption({required this.caption});
 
   @override
   Widget build(BuildContext context) {

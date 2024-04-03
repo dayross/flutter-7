@@ -21,7 +21,7 @@ class VideoButtons extends StatelessWidget {
         SpinPerfect(
             infinite: true,
             duration: const Duration(seconds: 10),
-            child: _CustomIconButton(
+            child: const _CustomIconButton(
                 value: 0, iconData: Icons.play_circle_outlined)),
       ],
     );
@@ -51,7 +51,7 @@ class _CustomIconButton extends StatelessWidget {
         if (value > 0)
           Text(
             HumanFormats.humanReadableNumber(value.toDouble()),
-            style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
+            style: const TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
           ),
       ],
     );

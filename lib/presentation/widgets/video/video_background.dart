@@ -19,8 +19,8 @@ class VideoBackground extends StatelessWidget {
         gradient: LinearGradient(
             begin: Alignment.topCenter,
             end: Alignment.bottomCenter,
-            colors: this.colors,
-            stops: this.stops),
+            colors: colors,
+            stops: stops),
       )),
     );
   }
