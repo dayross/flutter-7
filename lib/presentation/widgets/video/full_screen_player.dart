@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application_1/presentation/widgets/video/video_background.dart';
 import 'package:video_player/video_player.dart';
 
 class FullScreenPlayer extends StatefulWidget {
@@ -54,6 +55,9 @@ class _FullScreenPlayerState extends State<FullScreenPlayer> {
                 aspectRatio: _controller.value.aspectRatio,
                 child: Stack(children: [
                   VideoPlayer(_controller),
+                  VideoBackground(
+                    stops: const [0.8, 1.0],
+                  ),
                   Positioned(
                       bottom: 20,
                       left: 10,
