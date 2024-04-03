@@ -42,17 +42,26 @@ class _FullScreenPlayerState extends State<FullScreenPlayer> {
               ),
             );
           }
-          return AspectRatio(
-              aspectRatio: _controller.value.aspectRatio,
-              child: Stack(children: [
-                VideoPlayer(_controller),
-                Positioned(
-                    bottom: 20,
-                    left: 10,
-                    child: _VideoCaption(
-                      caption: widget.caption,
-                    ))
-              ]));
+          return GestureDetector(
+            onTap: () {
+              if (_controller.value.isPlaying) {
+                _controller.pause();
+                return;
+              }
+              _controller.play();
+            },
+            child: AspectRatio(
+                aspectRatio: _controller.value.aspectRatio,
+                child: Stack(children: [
+                  VideoPlayer(_controller),
+                  Positioned(
+                      bottom: 20,
+                      left: 10,
+                      child: _VideoCaption(
+                        caption: widget.caption,
+                      ))
+                ])),
+          );
         });
   }
 }
